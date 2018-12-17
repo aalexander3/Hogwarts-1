@@ -5,7 +5,7 @@ import Character from '../components/Character'
 class CharacterContainer extends Component {
 
   createCharacters = () => {
-    return this.props.characters.map(character => <Character key={character.name} image={character.image1} character={character} context='characterContainer'/>)
+    return this.props.characters.map(character => <Character key={character.name} image={character.image1} handleChange={this.props.handleChange} character={character} context='characterContainer'/>)
   }
 
   render(){

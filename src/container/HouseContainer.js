@@ -9,7 +9,7 @@ class HouseContainer extends React.Component {
   }
 
   displayHouse = () => {
-    return this.state.houses.map(house => <House house={house} characters={this.props.characters} /> )
+    return this.state.houses.map(house => <House key={house} house={house} characters={this.props.characters} /> )
   }
 
   render() {
